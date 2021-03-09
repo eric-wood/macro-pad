@@ -536,30 +536,13 @@ F 3 "~" H 5700 1150 50  0001 C CNN
 	1    5700 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C8
-U 1 1 6056B643
-P 6100 1150
-F 0 "C8" H 6215 1196 50  0000 L CNN
-F 1 "10n" H 6215 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6138 1000 50  0001 C CNN
-F 3 "~" H 6100 1150 50  0001 C CNN
-	1    6100 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 1300 5300 1300
 Wire Wire Line
 	5300 1300 5700 1300
 Connection ~ 5300 1300
 Wire Wire Line
-	5700 1300 6100 1300
-Connection ~ 5700 1300
-Wire Wire Line
-	6100 1000 5700 1000
-Wire Wire Line
 	5700 1000 5300 1000
-Connection ~ 5700 1000
 Wire Wire Line
 	4900 1000 5300 1000
 Connection ~ 5300 1000
