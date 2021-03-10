@@ -437,17 +437,6 @@ Text Label 1850 1600 2    50   ~ 0
 Wire Wire Line
 	2250 1600 2350 1600
 $Comp
-L Device:Crystal Y1
-U 1 1 60533B4C
-P 1350 2150
-F 0 "Y1" H 1350 2418 50  0000 C CNN
-F 1 "16MHz" H 1350 2327 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1350 2150 50  0001 C CNN
-F 3 "~" H 1350 2150 50  0001 C CNN
-	1    1350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 60549B45
 P 1050 2450
@@ -1077,4 +1066,26 @@ Wire Wire Line
 Wire Wire Line
 	8950 5700 9600 5700
 Connection ~ 9600 5700
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 6050F71C
+P 1350 2150
+F 0 "Y1" H 1544 2196 50  0000 L CNN
+F 1 "16MHz" H 1544 2105 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1350 2150 50  0001 C CNN
+F 3 "~" H 1350 2150 50  0001 C CNN
+	1    1350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2350 1350 2450
+Wire Wire Line
+	1350 1950 1150 1950
+Wire Wire Line
+	1150 1950 1150 2450
+Wire Wire Line
+	1150 2450 1350 2450
+Connection ~ 1350 2450
+Wire Wire Line
+	1350 2450 1350 2600
 $EndSCHEMATC
