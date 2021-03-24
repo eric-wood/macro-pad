@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 11)
+    (drawings 12)
     (tracks 314)
     (zones 0)
     (modules 50)
@@ -2186,7 +2186,7 @@
     )
   )
 
-  (module Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB (layer F.Cu) (tedit 5A02FE24) (tstamp 604787CE)
+  (module Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB (layer F.Cu) (tedit 5A02FE24) (tstamp 605B5A2C)
     (at 132 101)
     (descr "Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf")
     (tags "Cherry MX keyswitch 1.00u PCB")
@@ -2382,6 +2382,9 @@
     )
   )
 
+  (gr_text v2 (at 120.9896 100.4212 90) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text JLCJLCJLCJLC (at 167.925 62.625) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -2715,7 +2718,7 @@
   (segment (start 165.04699 58.98001) (end 135.93859 58.98001) (width 0.25) (layer B.Cu) (net 49))
   (segment (start 166.0238 58.0032) (end 165.04699 58.98001) (width 0.25) (layer B.Cu) (net 49))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 605A7445) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 605B59D9) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3432,7 +3435,7 @@
       )
     )
   )
-  (zone (net 5) (net_name /5V) (layer B.Cu) (tstamp 605A7442) (hatch edge 0.508)
+  (zone (net 5) (net_name /5V) (layer B.Cu) (tstamp 605B59D6) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3919,7 +3922,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 605A743F) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 605B59D3) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -4027,7 +4030,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 605A743C) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 605B59D0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
