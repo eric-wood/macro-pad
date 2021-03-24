@@ -271,8 +271,6 @@ Wire Wire Line
 Connection ~ 7200 2700
 Text Label 7850 1600 0    50   ~ 0
 col2
-Wire Wire Line
-	7850 1600 7850 2250
 Connection ~ 7850 2700
 Text Label 8500 1600 0    50   ~ 0
 col3
@@ -295,18 +293,12 @@ F 4 "C2128" V 7350 2050 50  0001 C CNN "LCSC"
 	1    7350 2050
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7850 2250
-Wire Wire Line
-	7850 2250 7850 2700
 Text Label 5900 2250 2    50   ~ 0
 row0
 Wire Wire Line
 	5900 2250 7350 2250
 Wire Wire Line
 	7350 2200 7350 2250
-Connection ~ 7350 2250
-Wire Wire Line
-	7350 2250 7850 2250
 Wire Wire Line
 	7350 1850 7350 1900
 Text Label 8500 1750 0    50   ~ 0
@@ -329,8 +321,6 @@ Wire Wire Line
 	8000 1850 8000 1900
 Wire Wire Line
 	8000 2200 8000 2250
-Wire Wire Line
-	8000 2250 7850 2250
 $Comp
 L Device:C C3
 U 1 1 604D7350
@@ -447,7 +437,7 @@ Wire Wire Line
 Text Label 1850 1600 2    50   ~ 0
 5V
 Wire Wire Line
-	2250 1600 2350 1600
+	2250 1600 2300 1600
 $Comp
 L Device:C C1
 U 1 1 60549B45
@@ -569,17 +559,6 @@ F 3 "" H 4900 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4900 1300
-$Comp
-L Switch:SW_Push SW1
-U 1 1 60590D31
-P 3850 4200
-F 0 "SW1" V 3804 4348 50  0000 L CNN
-F 1 "SW_Push" V 3895 4348 50  0000 L CNN
-F 2 "1825910-7:SW_1825910-7" H 3850 4400 50  0001 C CNN
-F 3 "~" H 3850 4400 50  0001 C CNN
-	1    3850 4200
-	0    1    1    0   
-$EndComp
 Text Label 4400 3800 0    50   ~ 0
 5V
 $Comp
@@ -595,27 +574,7 @@ F 4 "C25804" V 4100 3800 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3800 3850 3800
-Wire Wire Line
 	4400 3800 4250 3800
-Wire Wire Line
-	3850 4000 3850 3800
-Connection ~ 3850 3800
-Wire Wire Line
-	3850 3800 3950 3800
-$Comp
-L power:GND #PWR05
-U 1 1 605B8194
-P 3850 4450
-F 0 "#PWR05" H 3850 4200 50  0001 C CNN
-F 1 "GND" H 3855 4277 50  0000 C CNN
-F 2 "" H 3850 4450 50  0001 C CNN
-F 3 "" H 3850 4450 50  0001 C CNN
-	1    3850 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 4450 3850 4400
 NoConn ~ 3750 2500
 NoConn ~ 3750 2600
 NoConn ~ 3750 2700
@@ -731,10 +690,8 @@ Wire Wire Line
 	1650 5700 1750 5700
 Wire Wire Line
 	1650 6000 1750 6000
-NoConn ~ 2350 5500
 NoConn ~ 2350 5600
 NoConn ~ 2350 5900
-NoConn ~ 2350 6000
 Wire Wire Line
 	3550 6000 3550 6100
 $Comp
@@ -1122,4 +1079,103 @@ Wire Wire Line
 Connection ~ 1350 2450
 Wire Wire Line
 	1350 2450 1350 2600
+Wire Wire Line
+	7850 1600 7850 2700
+Wire Wire Line
+	8000 2250 7350 2250
+Connection ~ 7350 2250
+Wire Wire Line
+	3750 3800 3850 3800
+$Comp
+L Device:R R14
+U 1 1 605B4566
+P 2250 5200
+F 0 "R14" H 2320 5246 50  0000 L CNN
+F 1 "5.1k" H 2320 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 5200 50  0001 C CNN
+F 3 "~" H 2250 5200 50  0001 C CNN
+F 4 " C23186" H 2250 5200 50  0001 C CNN "LCSC"
+	1    2250 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5500 2250 5500
+Wire Wire Line
+	2250 5500 2250 5350
+$Comp
+L Device:R R13
+U 1 1 605B96D1
+P 2200 6250
+F 0 "R13" H 2270 6296 50  0000 L CNN
+F 1 "5.1k" H 2270 6205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 6250 50  0001 C CNN
+F 3 "~" H 2200 6250 50  0001 C CNN
+F 4 " C23186" H 2200 6250 50  0001 C CNN "LCSC"
+	1    2200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6000 2200 6000
+Wire Wire Line
+	2200 6000 2200 6100
+$Comp
+L power:GND #PWR014
+U 1 1 605BEE86
+P 2200 6450
+F 0 "#PWR014" H 2200 6200 50  0001 C CNN
+F 1 "GND" H 2205 6277 50  0000 C CNN
+F 2 "" H 2200 6450 50  0001 C CNN
+F 3 "" H 2200 6450 50  0001 C CNN
+	1    2200 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6450 2200 6400
+$Comp
+L power:GND #PWR05
+U 1 1 605C3CA8
+P 2050 5100
+F 0 "#PWR05" H 2050 4850 50  0001 C CNN
+F 1 "GND" H 2055 4927 50  0000 C CNN
+F 2 "" H 2050 5100 50  0001 C CNN
+F 3 "" H 2050 5100 50  0001 C CNN
+	1    2050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5100 2050 5050
+Wire Wire Line
+	2050 5050 2250 5050
+$Comp
+L Connector:TestPoint TP2
+U 1 1 605CA1C1
+P 3850 3950
+F 0 "TP2" H 3792 3970 50  0000 R CNN
+F 1 "~HWB" H 3792 4068 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4050 3950 50  0001 C CNN
+F 3 "~" H 4050 3950 50  0001 C CNN
+	1    3850 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 3950 3850 3800
+Connection ~ 3850 3800
+Wire Wire Line
+	3850 3800 3950 3800
+$Comp
+L Connector:TestPoint TP1
+U 1 1 605D4EEA
+P 2300 1250
+F 0 "TP1" H 2358 1374 50  0000 L CNN
+F 1 "~RESET" H 2358 1276 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1250 2300 1600
+Connection ~ 2300 1600
+Wire Wire Line
+	2300 1600 2350 1600
 $EndSCHEMATC
